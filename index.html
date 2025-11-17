@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatiana Wright | Piano Lessons & Performance</title>
+    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#3A506B', // Deep, slate-blue
+                        'brand-secondary': '#FEFBF3', // Warm, light cream
+                        'brand-accent': '#DDAA00', // Rich, warm gold
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-secondary text-brand-primary antialiased">
+
+    <!-- Header --><header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-brand-primary">
+                Tatiana Wright Piano
+            </a>
+            <div class="flex space-x-4 md:space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-brand-primary transition duration-300">About</a>
+                <a href="#services" class="text-gray-600 hover:text-brand-primary transition duration-300">Services</a>
+                <a href="#pricing" class="text-gray-600 hover:text-brand-primary transition duration-300">Pricing</a>
+                <a href="#contact" class="hidden sm:inline-block bg-brand-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-80 transition duration-300">
+                    Contact
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content --><main>
+
+        <!-- Hero Section --><section id="home" class="relative bg-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 lg:py-40 flex flex-col-reverse lg:flex-row items-center justify-between">
+                <!-- Text Content --><div class="lg:w-1/2 mt-10 lg:mt-0 z-10">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-brand-primary leading-tight">
+                        Experience the Joy of Piano
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Professional lessons and captivating performances by Tatiana Wright.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="inline-block bg-brand-primary text-white text-center px-8 py-3 rounded-full font-semibold hover:bg-opacity-80 transition duration-300 shadow-lg">
+                            Book a Lesson
+                        </a>
+                        <a href="#services" class="inline-block bg-transparent border-2 border-brand-primary text-brand-primary text-center px-8 py-3 rounded-full font-semibold hover:bg-brand-secondary transition duration-300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <!-- Image of Piano --><div class="lg:w-1/2 flex justify-center lg:justify-end p-8">
+                    <!-- 
+                        This is a placeholder image for a photograph. 
+                        You can replace the 'src' link with a URL to your own image.
+                    -->
+                    <img 
+                        src="https://placehold.co/600x450/FEFBF3/3A506B?text=Elegant+Photo+of+Piano+Keys&font=inter" 
+                        alt="Elegant photo of piano keys" 
+                        class="rounded-lg shadow-xl object-cover w-full max-w-md lg:max-w-lg"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Restored) --><section id="about" class="bg-brand-secondary py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-primary">About Tatiana Wright</h2>
+                    <div class="w-24 h-1 bg-brand-accent mx-auto mt-4 mb-8 rounded"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed text-left md:text-center bg-white p-8 rounded-lg shadow-md">
+                        [Your detailed biography will go here. You can write about your musical background, your teaching philosophy, performance experience, and what students can expect when they learn from you. 
+                        This is a placeholder, and you can easily replace this text in the `index.html` file.]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section --><section id="services" class="bg-white py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-primary">Services Offered</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                        Tailored instruction and professional performances to meet your musical needs.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 --><div class="bg-brand-secondary rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-2xl font-semibold mb-4">Private Piano Lessons</h3>
+                        <p class="text-gray-600">
+                            One-on-one instruction for all ages and skill levels, from beginner to advanced. Focus on technique, theory, and personal musical goals.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 --><div class="bg-brand-secondary rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-2xl font-semibold mb-4">Performance Services</h3>
+                        <p class="text-gray-600">
+                            Elegant piano music for your special events, including weddings, corporate functions, and private parties.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 --><div class="bg-brand-secondary rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-2xl font-semibold mb-4">Music Theory & Prep</h3>
+                        <p class="text-gray-600">
+                            Dedicated tutoring for music theory, sight-reading, and preparation for auditions or examinations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section --><section id="pricing" class="bg-brand-secondary py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-primary">Pricing & Packages</h2>
+                    <div class="w-24 h-1 bg-brand-accent mx-auto mt-4 mb-8 rounded"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed text-left md:text-center bg-white p-8 rounded-lg shadow-md">
+                        [Your pricing details will be added here. You can list your rates for 30-minute, 45-minute, and 60-minute lessons, as well as any package deals or performance fees.
+                        This is a placeholder and can be easily updated.]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section --><section id="contact" class="bg-brand-primary text-white py-20 md:py-28">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Get in Touch</h2>
+                <p class="text-lg text-gray-300 mt-4 max-w-xl mx-auto">
+                    Ready to start your musical journey or book a performance? Contact Tatiana today.
+                </p>
+                
+                <div class="mt-10">
+                    <a href="tel:980-328-9309" class="inline-block bg-brand-accent text-brand-primary text-xl md:text-2xl font-bold px-10 py-4 rounded-full hover:opacity-90 transition duration-300 shadow-lg">
+                        Call or Text: (980) 328-9309
+                    </a>
+                    <p class="text-gray-400 mt-6">
+                        You can also email at <a href="mailto:your-email@example.com" class="underline hover:text-white">[your-email@example.com]</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600">
+                &copy; <span id="current-year"></span> Tatiana Wright Piano. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
