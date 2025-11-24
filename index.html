@@ -35,15 +35,17 @@
 </head>
 <body class="bg-brand-secondary text-brand-primary antialiased">
 
-    <!-- Header / Navigation --><header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+    <!-- Header / Navigation -->
+    <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-brand-primary">
                 Tatiana Wright Piano
             </a>
             <div class="flex space-x-4 md:space-x-6">
-                <a href="#about" class="text-gray-600 hover:text-brand-primary transition duration-300">About</a>
+                <!-- Navigation is kept compact on mobile, but uses fluid spacing -->
                 <a href="#services" class="text-gray-600 hover:text-brand-primary transition duration-300">Services</a>
                 <a href="#pricing" class="text-gray-600 hover:text-brand-primary transition duration-300">Pricing</a>
+                <a href="#about" class="text-gray-600 hover:text-brand-primary transition duration-300">About</a>
                 <a href="#contact" class="hidden sm:inline-block bg-brand-primary text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-80 transition duration-300">
                     Contact
                 </a>
@@ -51,39 +53,121 @@
         </nav>
     </header>
 
-    <!-- Main Content --><main>
+    <!-- Main Content -->
+    <main>
 
-        <!-- Hero Section --><section id="home" class="relative bg-brand-secondary">
-            <div class="container mx-auto px-6 py-24 md:py-32 lg:py-40 flex flex-col-reverse lg:flex-row items-center justify-between">
+        <!-- Hero Section - Enhanced Mobile Layout -->
+        <section id="home" class="relative bg-brand-secondary">
+            <!-- On mobile (default), image is first (flex-col), then it reverses on large screens (lg:flex-row) -->
+            <div class="container mx-auto px-6 py-16 md:py-32 flex flex-col-reverse lg:flex-row items-center justify-between">
                 
-                <!-- Text Content --><div class="lg:w-1/2 mt-10 lg:mt-0 z-10">
+                <!-- Text Content -->
+                <div class="lg:w-1/2 mt-10 lg:mt-0 z-10 text-center lg:text-left">
                     <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-brand-primary leading-tight">
                         Experience the Joy of Piano
                     </h1>
                     <p class="mt-4 text-lg text-brand-primary/80">
                         Professional lessons and captivating performances by Tatiana Wright.
                     </p>
-                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a href="#contact" class="inline-block bg-brand-primary text-white text-center px-8 py-3 rounded-full font-semibold hover:bg-opacity-80 transition duration-300 shadow-lg">
                             Book a Lesson
                         </a>
-                        <a href="#services" class="inline-block bg-transparent border-2 border-brand-primary text-brand-primary text-center px-8 py-3 rounded-full font-semibold hover:bg-brand-secondary transition duration-300">
-                            Learn More
+                        <a href="#pricing" class="inline-block bg-transparent border-2 border-brand-primary text-brand-primary text-center px-8 py-3 rounded-full font-semibold hover:bg-brand-secondary transition duration-300">
+                            View Rates
                         </a>
                     </div>
                 </div>
                 
-                <!-- Image of Piano --><div class="lg:w-1/2 flex justify-center lg:justify-end">
+                <!-- Image of Piano - Added better max-width for small screens -->
+                <div class="lg:w-1/2 flex justify-center lg:justify-end w-full">
                     <img 
                         src="image_6309a7.jpg" 
                         alt="Elegant drawing of a grand piano" 
-                        class="rounded-lg shadow-xl object-cover w-full max-w-md lg:max-w-none"
+                        class="rounded-lg shadow-xl object-cover w-11/12 max-w-md lg:max-w-none"
                     >
                 </div>
             </div>
         </section>
 
-        <!-- About Section --><section id="about" class="bg-brand-secondary py-20 md:py-28">
+        <!-- Services Section - Mobile optimized bg and spacing -->
+        <section id="services" class="bg-brand-primary text-white py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Services Offered</h2>
+                    <p class="text-lg text-brand-secondary/80 mt-4 max-w-2xl mx-auto">
+                        Tailored instruction and professional performances to meet your musical needs.
+                    </p>
+                </div>
+                
+                <!-- On mobile (default), these grid columns stack cleanly -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-brand-secondary text-brand-primary rounded-lg shadow-lg p-6 sm:p-8 transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-3">Private Piano Lessons</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            One-on-one instruction for all ages and skill levels, from beginner to advanced. Focus on technique, theory, and personal musical goals.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-brand-secondary text-brand-primary rounded-lg shadow-lg p-6 sm:p-8 transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-3">Performance Services</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Elegant piano music for your special events, including weddings, corporate functions, and private parties.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-brand-secondary text-brand-primary rounded-lg shadow-lg p-6 sm:p-8 transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-3">Music Theory & Prep</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Dedicated tutoring for music theory, sight-reading, and preparation for auditions or examinations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section - Mobile optimized card layout -->
+        <section id="pricing" class="bg-brand-secondary py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-primary">Lesson Pricing</h2>
+                    <div class="w-24 h-1 bg-brand-accent mx-auto mt-4 rounded"></div>
+                    <p class="text-lg text-brand-primary/80 mt-4">Standard rates for private instruction.</p>
+                </div>
+
+                <!-- On mobile, these cards stack and are full width -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <!-- 30 Min -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-600 mb-2">Beginner / Young Student</h3>
+                        <div class="text-4xl font-bold text-brand-primary mb-1">$50</div>
+                        <div class="text-sm text-brand-accent font-medium uppercase tracking-wide mb-6">30 Minute Lesson</div>
+                        <p class="text-gray-500 text-sm">Perfect for young beginners starting their musical journey.</p>
+                    </div>
+
+                    <!-- 45 Min -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-brand-accent relative z-10">
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-accent text-brand-primary text-xs font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
+                        <h3 class="text-xl font-semibold text-gray-600 mb-2">Intermediate</h3>
+                        <div class="text-4xl font-bold text-brand-primary mb-1">$70</div>
+                        <div class="text-sm text-brand-accent font-medium uppercase tracking-wide mb-6">45 Minute Lesson</div>
+                        <p class="text-gray-500 text-sm">Ideal for progressing students building repertoire and technique.</p>
+                    </div>
+
+                    <!-- 60 Min -->
+                    <div class="bg-white rounded-xl shadow-md p-6 sm:p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-600 mb-2">Advanced / Adult</h3>
+                        <div class="text-4xl font-bold text-brand-primary mb-1">$90</div>
+                        <div class="text-sm text-brand-accent font-medium uppercase tracking-wide mb-6">60 Minute Lesson</div>
+                        <p class="text-gray-500 text-sm">In-depth instruction for serious students and advanced repertoire.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section - Enhanced Mobile Grid Stacking -->
+        <section id="about" class="bg-brand-secondary py-20 md:py-28">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
                     <div class="text-center mb-12">
@@ -91,15 +175,17 @@
                         <div class="w-24 h-1 bg-brand-accent mx-auto mt-4 rounded"></div>
                     </div>
                     
-                    <!-- Tatiana's Photo --><div class="mb-12 flex justify-center">
+                    <!-- Tatiana's Photo -->
+                    <div class="mb-12 flex justify-center">
                         <img 
                             src="tatiana-wright-profile.jpg" 
                             alt="Tatiana Wright smiling" 
-                            class="rounded-full shadow-lg w-64 h-64 object-cover border-4 border-brand-accent"
+                            class="rounded-full shadow-lg w-56 h-56 object-cover border-4 border-brand-accent"
                         >
                     </div>
 
-                    <!-- Biography Text --><div class="bg-white p-8 rounded-lg shadow-md text-lg text-gray-600 leading-relaxed space-y-6 mb-12">
+                    <!-- Biography Text -->
+                    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md text-base sm:text-lg text-gray-600 leading-relaxed space-y-6 mb-12">
                         <p>
                             Tatiana Wright is a classical pianist and educator with a Master’s degree in Piano Performance and a broad range of musical interests. As a piano teacher, she is committed to helping students of all ages and abilities discover confidence, artistry, and joy in playing the instrument. With years of experience teaching in different settings, Tatiana uses an individualized approach that builds strong technique, expressive interpretation, and a lifelong appreciation for music. Her teaching style is supportive, patient, and motivating, focusing on guiding each student toward their personal goals, whether it is a formal study or learning for personal enrichment.
                         </p>
@@ -114,12 +200,14 @@
                         </p>
                     </div>
 
-                    <!-- Education & Experience Grid --><div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Education --><div>
-                            <h3 class="text-2xl font-bold text-brand-primary mb-6 flex items-center">
+                    <!-- Education & Experience Grid - Ensures stacking on small screen (default) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                        <!-- Education -->
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-brand-primary mb-4 flex items-center">
                                 <span class="mr-3 text-brand-accent">🎓</span> Education
                             </h3>
-                            <ul class="space-y-4 bg-white p-6 rounded-lg shadow-sm h-full">
+                            <ul class="space-y-3 bg-white p-6 rounded-lg shadow-sm h-full text-sm sm:text-base">
                                 <li class="border-l-4 border-brand-accent pl-4">
                                     <div class="font-semibold text-brand-primary">Master of Music in Piano Performance</div>
                                     <div class="text-gray-600 text-sm">Appalachian State University</div>
@@ -131,18 +219,19 @@
                             </ul>
                         </div>
 
-                        <!-- Work Experience --><div>
-                            <h3 class="text-2xl font-bold text-brand-primary mb-6 flex items-center">
+                        <!-- Work Experience -->
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-bold text-brand-primary mb-4 flex items-center">
                                 <span class="mr-3 text-brand-accent">🎹</span> Work Experience
                             </h3>
-                            <ul class="space-y-3 bg-white p-6 rounded-lg shadow-sm">
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Private Piano Teacher</span> <span class="text-gray-400 text-sm ml-2">2015 - present</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Private Event Pianist</span> <span class="text-gray-400 text-sm ml-2">2015 - present</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Adjunct Lecturer of Piano</span>, Appalachian State University <span class="text-gray-400 text-sm ml-1">2022-2025</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Collaborative Pianist</span>, Appalachian State University <span class="text-gray-400 text-sm ml-1">2022-2025</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Church Pianist</span>, First Baptist Church of Boone, NC <span class="text-gray-400 text-sm ml-1">2022-2025</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Musical Theater Pianist/Coach</span>, Lees-McRae College <span class="text-gray-400 text-sm ml-1">2023-2024</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Choir Accompanist</span>, Watauga High School, NC <span class="text-gray-400 text-sm ml-1">2023-2024</span></li>
+                            <ul class="space-y-3 bg-white p-6 rounded-lg shadow-sm text-sm sm:text-base">
+                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Private Piano Teacher</span> <span class="text-gray-400 text-xs ml-2">2015 - present</span></li>
+                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Private Event Pianist</span> <span class="text-gray-400 text-xs ml-2">2015 - present</span></li>
+                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Adjunct Lecturer of Piano</span>, Appalachian State University <span class="text-gray-400 text-xs ml-1">2022-2025</span></li>
+                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Collaborative Pianist</span>, Appalachian State University <span class="text-gray-400 text-xs ml-1">2022-2025</span></li>
+                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Church Pianist</span>, First Baptist Church of Boone, NC <span class="text-gray-400 text-xs ml-1">2022-2025</span></li>
+                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Musical Theater Pianist/Coach</span>, Lees-McRae College <span class="text-gray-400 text-xs ml-1">2023-2024</span></li>
+                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Choir Accompanist</span>, Watauga High School, NC <span class="text-gray-400 text-xs ml-1">2023-2024</span></li>
                             </ul>
                         </div>
                     </div>
@@ -150,73 +239,8 @@
             </div>
         </section>
 
-        <!-- Services Section --><section id="services" class="bg-brand-primary text-white py-20 md:py-28">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold">Services Offered</h2>
-                    <p class="text-lg text-brand-secondary/80 mt-4 max-w-2xl mx-auto">
-                        Tailored instruction and professional performances to meet your musical needs.
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Service Card 1 --><div class="bg-brand-secondary text-brand-primary rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-4">Private Piano Lessons</h3>
-                        <p class="text-gray-700">
-                            One-on-one instruction for all ages and skill levels, from beginner to advanced. Focus on technique, theory, and personal musical goals.
-                        </p>
-                    </div>
-                    <!-- Service Card 2 --><div class="bg-brand-secondary text-brand-primary rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-4">Performance Services</h3>
-                        <p class="text-gray-700">
-                            Elegant piano music for your special events, including weddings, corporate functions, and private parties.
-                        </p>
-                    </div>
-                    <!-- Service Card 3 --><div class="bg-brand-secondary text-brand-primary rounded-lg shadow-lg p-8 transform hover:-translate-y-2 transition duration-300">
-                        <h3 class="text-2xl font-semibold mb-4">Music Theory & Prep</h3>
-                        <p class="text-gray-700">
-                            Dedicated tutoring for music theory, sight-reading, and preparation for auditions or examinations.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section --><section id="pricing" class="bg-brand-secondary py-20 md:py-28">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-primary">Lesson Pricing</h2>
-                    <div class="w-24 h-1 bg-brand-accent mx-auto mt-4 rounded"></div>
-                    <p class="text-lg text-brand-primary/80 mt-4">Standard rates for private instruction.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                    <!-- 30 Min --><div class="bg-white rounded-xl shadow-md p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-gray-200">
-                        <h3 class="text-xl font-semibold text-gray-600 mb-2">Beginner / Young Student</h3>
-                        <div class="text-4xl font-bold text-brand-primary mb-1">$50</div>
-                        <div class="text-sm text-brand-accent font-medium uppercase tracking-wide mb-6">30 Minute Lesson</div>
-                        <p class="text-gray-500 text-sm">Perfect for young beginners starting their musical journey.</p>
-                    </div>
-
-                    <!-- 45 Min --><div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-brand-accent relative z-10">
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-accent text-brand-primary text-xs font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
-                        <h3 class="text-xl font-semibold text-gray-600 mb-2">Intermediate</h3>
-                        <div class="text-4xl font-bold text-brand-primary mb-1">$70</div>
-                        <div class="text-sm text-brand-accent font-medium uppercase tracking-wide mb-6">45 Minute Lesson</div>
-                        <p class="text-gray-500 text-sm">Ideal for progressing students building repertoire and technique.</p>
-                    </div>
-
-                    <!-- 60 Min --><div class="bg-white rounded-xl shadow-md p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-gray-200">
-                        <h3 class="text-xl font-semibold text-gray-600 mb-2">Advanced / Adult</h3>
-                        <div class="text-4xl font-bold text-brand-primary mb-1">$90</div>
-                        <div class="text-sm text-brand-accent font-medium uppercase tracking-wide mb-6">60 Minute Lesson</div>
-                        <p class="text-gray-500 text-sm">In-depth instruction for serious students and advanced repertoire.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section --><section id="contact" class="bg-brand-primary text-white py-20 md:py-28">
+        <!-- Contact Section - Mobile optimized text size and spacing -->
+        <section id="contact" class="bg-brand-primary text-white py-20 md:py-28">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold">Get in Touch</h2>
                 <p class="text-lg text-brand-secondary/80 mt-4 max-w-xl mx-auto">
@@ -224,10 +248,10 @@
                 </p>
                 
                 <div class="mt-10 flex flex-col items-center gap-6">
-                    <a href="mailto:tatianawright.piano@gmail.com" class="text-xl md:text-2xl text-white hover:text-brand-accent transition duration-300 border-b-2 border-transparent hover:border-brand-accent pb-1">
+                    <a href="mailto:tatianawright.piano@gmail.com" class="text-xl sm:text-2xl text-white hover:text-brand-accent transition duration-300 border-b-2 border-transparent hover:border-brand-accent pb-1">
                         tatianawright.piano@gmail.com
                     </a>
-                    <a href="tel:980-328-9309" class="inline-block bg-brand-accent text-brand-primary text-xl md:text-2xl font-bold px-10 py-4 rounded-full hover:opacity-90 transition duration-300 shadow-lg">
+                    <a href="tel:980-328-9309" class="inline-block bg-brand-accent text-brand-primary text-xl sm:text-2xl font-bold px-10 py-4 rounded-full hover:opacity-90 transition duration-300 shadow-lg">
                         (980) 328-9309
                     </a>
                 </div>
@@ -236,9 +260,10 @@
 
     </main>
 
-    <!-- Footer --><footer class="bg-white py-8">
+    <!-- Footer -->
+    <footer class="bg-white py-8">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm">
                 &copy; <span id="current-year"></span> Tatiana Wright Piano. All Rights Reserved.
             </p>
         </div>
