@@ -95,8 +95,7 @@
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold">Services Offered</h2>
-                    <p class="text-lg text-brand-secondary/80 mt-4 max-w-2xl mx-auto">
-                    </p>
+                    <!-- Removed description: "Tailored instruction and professional performances to meet your musical needs." -->
                 </div>
                 
                 <!-- On mobile (default), these grid columns stack cleanly -->
@@ -115,11 +114,11 @@
                             Piano music for your special events, including weddings, corporate functions, and private parties.
                         </p>
                     </div>
-                    <!-- Service Card 3 -->
+                    <!-- Service Card 3 (Collaborative Piano) -->
                     <div class="bg-brand-secondary text-brand-primary rounded-lg shadow-lg p-6 sm:p-8 transform hover:-translate-y-2 transition duration-300">
-                        <h3 class="text-xl sm:text-2xl font-semibold mb-3">Music Theory & Prep</h3>
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-3">Collaborative Piano</h3>
                         <p class="text-gray-700 text-sm sm:text-base">
-                            Dedicated tutoring for music theory, sight-reading, and preparation for auditions or examinations.
+                            Professional piano accompaniment for soloists, ensembles, choirs, and more.
                         </p>
                     </div>
                 </div>
@@ -132,7 +131,7 @@
                 <div class="max-w-4xl mx-auto text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-primary">Lesson Pricing</h2>
                     <div class="w-24 h-1 bg-brand-accent mx-auto mt-4 rounded"></div>
-                    <p class="text-lg text-brand-primary/80 mt-4">Standard rates for private instruction.</p>
+                    <!-- Removed description: "Standard rates for private instruction" -->
                 </div>
 
                 <!-- On mobile, these cards stack and are full width -->
@@ -146,8 +145,8 @@
                     </div>
 
                     <!-- 45 Min -->
-                    <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-brand-accent relative z-10">
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-accent text-brand-primary text-xs font-bold px-3 py-1 rounded-full uppercase">Most Popular</div>
+                    <!-- Removed: Most Popular tag -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-gray-200 relative z-10">
                         <h3 class="text-xl font-semibold text-gray-600 mb-2">Intermediate</h3>
                         <div class="text-4xl font-bold text-brand-primary mb-1">$70</div>
                         <div class="text-sm text-brand-accent font-medium uppercase tracking-wide mb-6">45 Minute Lesson</div>
@@ -200,13 +199,14 @@
                     </div>
 
                     <!-- Education & Experience Grid - Ensures stacking on small screen (default) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
                         <!-- Education -->
                         <div>
                             <h3 class="text-xl sm:text-2xl font-bold text-brand-primary mb-4 flex items-center">
                                 <span class="mr-3 text-brand-accent">🎓</span> Education
                             </h3>
-                            <ul class="space-y-3 bg-white p-6 rounded-lg shadow-sm h-full text-sm sm:text-base">
+                            <!-- Removed 'h-full' from the class list below so the box shrinks to fit content -->
+                            <ul class="space-y-3 bg-white p-6 rounded-lg shadow-sm text-sm sm:text-base">
                                 <li class="border-l-4 border-brand-accent pl-4">
                                     <div class="font-semibold text-brand-primary">Master of Music in Piano Performance</div>
                                     <div class="text-gray-600 text-sm">Appalachian State University</div>
@@ -218,21 +218,68 @@
                             </ul>
                         </div>
 
-                        
                         <!-- Work Experience -->
                         <div>
                             <h3 class="text-xl sm:text-2xl font-bold text-brand-primary mb-4 flex items-center">
                                 <span class="mr-3 text-brand-accent">🎹</span> Work Experience
                             </h3>
-                            <ul class="space-y-3 bg-white p-6 rounded-lg shadow-sm text-sm sm:text-base">
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Private Piano Teacher</span> <span class="text-gray-400 text-xs ml-2">2015 - present</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Private Event Pianist</span> <span class="text-gray-400 text-xs ml-2">2015 - present</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Adjunct Lecturer of Piano</span>, Appalachian State University <span class="text-gray-400 text-xs ml-1">2022-2025</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Collaborative Pianist</span>, Appalachian State University <span class="text-gray-400 text-xs ml-1">2022-2025</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Church Pianist</span>, First Baptist Church of Boone, NC <span class="text-gray-400 text-xs ml-1">2022-2025</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Musical Theater Pianist/Coach</span>, Lees-McRae College <span class="text-gray-400 text-xs ml-1">2023-2024</span></li>
-                                <li class="text-gray-700"><span class="font-semibold text-brand-primary">Choir Accompanist</span>, Watauga High School, NC <span class="text-gray-400 text-xs ml-1">2023-2024</span></li>
-                            </ul>
+                            <!-- Start of column formatting for work experience -->
+                            <div class="bg-white p-6 rounded-lg shadow-sm text-sm sm:text-base">
+                                
+                                <!-- Header Row -->
+                                <div class="grid grid-cols-3 font-bold text-brand-primary border-b border-gray-200 pb-2 mb-2">
+                                    <div>Title</div>
+                                    <div>Place</div>
+                                    <div>Years</div>
+                                </div>
+                                
+                                <!-- List Items - Added vertical spacing (py-2) to prevent overlap -->
+                                <div class="space-y-2 text-gray-700">
+                                    <!-- Private Piano Teacher -->
+                                    <div class="grid grid-cols-3 py-1 border-b border-gray-100 last:border-b-0">
+                                        <div class="font-semibold text-brand-primary">Private Piano Teacher</div>
+                                        <div class="text-gray-700">Self-Employed</div>
+                                        <div class="text-gray-400 text-xs sm:text-sm">2015 - present</div>
+                                    </div>
+                                    <!-- Private Event Pianist -->
+                                    <div class="grid grid-cols-3 py-1 border-b border-gray-100 last:border-b-0">
+                                        <div class="font-semibold text-brand-primary">Private Event Pianist</div>
+                                        <div class="text-gray-700">Self-Employed</div>
+                                        <div class="text-gray-400 text-xs sm:text-sm">2015 - present</div>
+                                    </div>
+                                    <!-- Adjunct Lecturer of Piano -->
+                                    <div class="grid grid-cols-3 py-1 border-b border-gray-100 last:border-b-0">
+                                        <div class="font-semibold text-brand-primary">Adjunct Lecturer of Piano</div>
+                                        <div class="text-gray-700">Appalachian State University</div>
+                                        <div class="text-gray-400 text-xs sm:text-sm">2022-2025</div>
+                                    </div>
+                                    <!-- Collaborative Pianist -->
+                                    <div class="grid grid-cols-3 py-1 border-b border-gray-100 last:border-b-0">
+                                        <div class="font-semibold text-brand-primary">Collaborative Pianist</div>
+                                        <div class="text-gray-700">Appalachian State University</div>
+                                        <div class="text-gray-400 text-xs sm:text-sm">2022-2025</div>
+                                    </div>
+                                    <!-- Church Pianist -->
+                                    <div class="grid grid-cols-3 py-1 border-b border-gray-100 last:border-b-0">
+                                        <div class="font-semibold text-brand-primary">Church Pianist</div>
+                                        <div class="text-gray-700">First Baptist Church of Boone, NC</div>
+                                        <div class="text-gray-400 text-xs sm:text-sm">2022-2025</div>
+                                    </div>
+                                    <!-- Musical Theater Pianist/Coach -->
+                                    <div class="grid grid-cols-3 py-1 border-b border-gray-100 last:border-b-0">
+                                        <div class="font-semibold text-brand-primary">Musical Theater Pianist/Coach</div>
+                                        <div class="text-gray-700">Lees-McRae College</div>
+                                        <div class="text-gray-400 text-xs sm:text-sm">2023-2024</div>
+                                    </div>
+                                    <!-- Choir Accompanist -->
+                                    <div class="grid grid-cols-3 py-1 border-b-0">
+                                        <div class="font-semibold text-brand-primary">Choir Accompanist</div>
+                                        <div class="text-gray-700">Watauga High School, NC</div>
+                                        <div class="text-gray-400 text-xs sm:text-sm">2023-2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of column formatting for work experience -->
                         </div>
                     </div>
                 </div>
