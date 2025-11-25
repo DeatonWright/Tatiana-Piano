@@ -37,11 +37,12 @@
 
     <!-- Header / Navigation -->
     <header class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-brand-primary">
-                Tatiana Wright Piano Lessons and Performance
+        <!-- Updated Layout: Flex-col on mobile (vertical), Flex-row on desktop (horizontal) -->
+        <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+            <a href="#" class="text-xl font-bold text-brand-primary text-center md:text-left leading-tight">
+                Tatiana Wright <span class="block sm:inline">Piano Lessons and Performance</span>
             </a>
-            <div class="flex space-x-4 md:space-x-6">
+            <div class="flex space-x-4 md:space-x-6 text-sm sm:text-base">
                 <!-- Navigation is kept compact on mobile, but uses fluid spacing -->
                 <a href="#services" class="text-gray-600 hover:text-brand-primary transition duration-300">Services</a>
                 <a href="#pricing" class="text-gray-600 hover:text-brand-primary transition duration-300">Pricing</a>
@@ -95,7 +96,7 @@
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold">Services Offered</h2>
-                    <!-- Removed description: "Tailored instruction and professional performances to meet your musical needs." -->
+                    <!-- Removed description -->
                 </div>
                 
                 <!-- On mobile (default), these grid columns stack cleanly -->
@@ -131,7 +132,7 @@
                 <div class="max-w-4xl mx-auto text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-primary">Lesson Pricing</h2>
                     <div class="w-24 h-1 bg-brand-accent mx-auto mt-4 rounded"></div>
-                    <!-- Removed description: "Standard rates for private instruction" -->
+                    <!-- Removed description -->
                 </div>
 
                 <!-- On mobile, these cards stack and are full width -->
